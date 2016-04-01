@@ -1,0 +1,42 @@
+.navbar {
+	background-color: #203245;
+	z-index: 10;
+	border: none;
+	border-radius: 0px;
+	height: 50px;
+}
+
+.nav > li > a {
+	color: white;
+	padding: 15px 15px;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    color: #e5e5e5;
+    background-color: transparent;
+}
+
+@media (min-width: 768px) {
+	.nav {
+	    position: absolute;
+	    right: 50%;
+	    margin-right: -140px;
+	    margin-top: 0;
+	    -webkit-transition: right .5s ease;
+	    -moz-transition: right .5s ease;
+	    transition: right .5s ease;
+	    white-space: nowrap;
+	    overflow: hidden;
+	}
+
+	.affix .nav {
+		right: 180px;
+	}
+
+	.affix {
+		width: 100%;
+		top: 0px; 
+
+	}
+
+}

@@ -19,6 +19,7 @@
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
+
     <!-- endbuild -->
     
   </head>
@@ -29,24 +30,22 @@
 
     <section id="landing" class="container-fluid">
       <div class="row">
-        <div class="col-xs-12"></div>
+        <div class="col-xs-12">
+          <h1>O'Neill Solicitors</h1>
+        </div>
       </div>
     </section>
-    <nav class="navbar navbar-default navbar-fixed-top affix-top js-navbar-highlight" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+    <nav class="navbar navbar-default affix-top js-navbar">
           <div class="container-fluid">
-
-
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-
               <a id="nav-toggle" class="collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span></span></a>
-       
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <!-- NAVITEMS -->
-              <ul class="nav nav-pills pull-right">
+              <ul class="nav nav-pills">
                 <li><a class="page-scroll" href="#about">About</a></li>
                 <li><a class="page-scroll" href="#whoWeAre">Who We Are</a></li>
                 <li><a class="page-scroll" href="#services">Services</a></li>
@@ -55,8 +54,6 @@
                 <!-- <li><a href="#google-map"><span class="glyphicon glyphicon-search"></span></a></li> -->
               </ul>
               <!-- ENDNAVITEMS -->
-
-
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
     </nav>
@@ -66,10 +63,18 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis cupiditate amet, quod eum error cumque tempora ex autem. At et nam laboriosam maiores itaque, laudantium quasi molestias numquam, quidem hic consequatur minus praesentium, aut placeat dolore nobis a. Alias voluptatum aut natus nemo, perferendis quibusdam cum reiciendis, nobis magnam commodi voluptates laudantium quia officia harum. Porro sunt dolor minima suscipit cumque at debitis, ullam, ipsam aut dicta, doloribus inventore sint perspiciatis ea maiores quisquam ut tempora commodi possimus veritatis fuga ipsa rerum consectetur. Quas in, fuga exercitationem quaerat. Fugiat quibusdam illo est aut iusto soluta nemo voluptatibus vitae, velit provident!</p></div>
       </div>
     </section>
-    <section id="whoWeAre" class="container-fluid">
-      <div class="row">        
-        <div class="col-xs-12 col-sm-6" style="background: gray; height: 300px"></div>
-        <div class="col-xs-12 col-sm-6"></div>
+    <section id="whoWeAre">
+      <div class="container">
+          <div class="row">        
+            <div class="col-xs-12 col-sm-6">
+              <h2>Who We Are</h2>
+              <h3>Mary O'Neill</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam possimus, vitae incidunt, aliquam accusamus repellat pariatur tempora maiores illo sit natus animi quasi nesciunt excepturi perferendis voluptate at amet deleniti.</p>
+              <h3>Valerie Byrne</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa distinctio porro consequatur libero debitis amet totam a repellendus molestias ducimus.</p>
+            </div>
+            <img src="https://placehold.it/400x300" alt="">
+        </div>
       </div>
     </section>
     <section id="services" class="container-fluid">
@@ -85,43 +90,61 @@
         <div class="col-xs-6 col-sm-3"></div>
       </div>
     </section>
-    <section class="container" id="contact">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6">
-            <form role="form" id="email-form">
-                <div class="form-group">
-                  <input type="text" class="form-control" name="inputName" id="inputName" placeholder="Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Email" required  >
-                </div>          
-                <div class="form-group">
-                  <textarea class="form-control" name="inputMessage" id="inputMessage" placeholder="Message"  rows="4"></textarea>
-                </div>
-                <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
-              
-            </form>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <h2>Contact Us</h2>
-          <h3>Address</h3>
-          <p>12A Carysfort Avenue, Blackrock, Co. Dublin</p>
-          <h3>Business Hours</h3>
-          <p>Monday - Friday 9:00am - 5:30pm</p>
-          <div class="row">
-            <div class="col-xs-12 col-sm-6">
-              <h3>Phone</h3>
-              <p><a href="">(01) 288 2100</a></p>
-            </div>
-            <div class="col-xs-12 col-sm-6">
-              <h3>Email</h3>
-              <p><a href="">info@oneillsols.ie</a></p>
-            </div>
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+              <form role="form" id="email-form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="inputName" id="inputName" placeholder="Name" required>
+                  </div>
+                  <div class="form-group">
+                      <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Email" required  >
+                  </div>          
+                  <div class="form-group">
+                    <textarea class="form-control" name="inputMessage" id="inputMessage" placeholder="Message"  rows="4"></textarea>
+                  </div>
+                  <input type="submit" name="SEND" id="submit" value="Submit" class="btn btn-info pull-right">
+                
+              </form>
           </div>
-          
+          <div class="col-xs-12 col-sm-6">
+            <h2>Contact Us</h2>
+            <h3>Address</h3>
+            <p>12A Carysfort Avenue, Blackrock, Co. Dublin</p>
+            <h3>Business Hours</h3>
+            <p>Monday - Friday 9:00am - 5:30pm</p>
+            <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                <h3>Phone</h3>
+                <p><a href="">(01) 288 2100</a></p>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <h3>Email</h3>
+                <p><a href="">info@oneillsols.ie</a></p>
+              </div>
+            </div>
+            
+          </div>
         </div>
       </div>
     </section>
+    <div id="googleMap" class="container-fluid">
+      <div class="row">
+        <div id="js-google-map" class="col-xs-12"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <a href="">View Larger Map</a>
+        </div>
+        <div class="col-xs-12 col-xs-6">
+          
+        </div>
+      </div>
+    </div>
+    
 
     <div class="footer">
         <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
@@ -131,6 +154,7 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/gmap3/dist/gmap3.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
