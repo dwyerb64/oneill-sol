@@ -64,7 +64,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 730px;
+    max-width: 970px;
   }
 
   /* Remove the padding we set earlier */
@@ -93,5 +93,6 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import "landing.scss";
 @import "whoWeAre.scss";
 @import "contact.scss";
+@import "footer.scss";
 
 

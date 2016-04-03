@@ -68,9 +68,9 @@
           <div class="row">        
             <div class="col-xs-12 col-sm-6">
               <h2>Who We Are</h2>
-              <h3>Mary O'Neill</h3>
+              <h4>Mary O'Neill</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam possimus, vitae incidunt, aliquam accusamus repellat pariatur tempora maiores illo sit natus animi quasi nesciunt excepturi perferendis voluptate at amet deleniti.</p>
-              <h3>Valerie Byrne</h3>
+              <h4>Valerie Byrne</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa distinctio porro consequatur libero debitis amet totam a repellendus molestias ducimus.</p>
             </div>
             <img src="https://placehold.it/400x300" alt="">
@@ -96,19 +96,19 @@
           <div class="col-xs-12 col-sm-6">
               <form role="form" id="email-form">
                   <div class="form-group">
-                    <input type="text" class="form-control" name="inputName" id="inputName" placeholder="Name" required>
+                    <input type="text" class="form-control" name="inputName" id="inputName" placeholder="NAME" required>
                   </div>
                   <div class="form-group">
-                      <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Email" required  >
+                      <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="EMAIL" required  >
                   </div>          
                   <div class="form-group">
-                    <textarea class="form-control" name="inputMessage" id="inputMessage" placeholder="Message"  rows="4"></textarea>
+                    <textarea class="form-control" name="inputMessage" id="inputMessage" placeholder="MESSAGE"  rows="4"></textarea>
                   </div>
                   <input type="submit" name="SEND" id="submit" value="Submit" class="btn btn-info pull-right">
                 
               </form>
           </div>
-          <div class="col-xs-12 col-sm-6">
+          <div class="col-xs-12 col-sm-6 contact-details">
             <h2>Contact Us</h2>
             <h3>Address</h3>
             <p>12A Carysfort Avenue, Blackrock, Co. Dublin</p>
@@ -134,28 +134,42 @@
         <div id="js-google-map" class="col-xs-12"></div>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-md-6">
-          <a href="">View Larger Map</a>
-        </div>
-        <div class="col-xs-12 col-xs-6">
-          
+    <div class="map-footer">
+      <div class="container top-padding-sm bottom-padding-sm">
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <a href="">View Larger Map</a>
+          </div>
+          <div class="col-xs-12 col-xs-6">
+            
+          </div>
         </div>
       </div>
     </div>
     
 
     <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <small>Copyright 2015. O'Neill Solicitors, 12A Carysfort Avenue, Blackrock, Co. Dublin</small><br>
+            <small>*In contentious business, a solicitor may not calculate fees or other charges as a percentage or proportion of any award or settlement</small>
+            <ul>
+              <li><a href="" class="first-link">Sitemap</a></li>
+              <li><a href="">Privacy & Cookies</a></li>
+              <li><a href="">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>        
     </div>
     
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/gmap3/dist/gmap3.min.js"></script>
     <!-- endbower -->
+    <script src="/bower_components/gmap3/dist/gmap3.js"></script>
     <!-- endbuild -->
 
     

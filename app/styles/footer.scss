@@ -1,0 +1,34 @@
+.footer {
+	background-color: #527191;
+	color: #353739;
+	border-top: 0px solid #e5e5e5;
+}
+
+.footer a {
+	color: white;
+}
+
+.footer li {
+	display: inline-block;
+	margin: 20px;
+	position: relative;
+}
+
+.footer ul {
+	width: 600px;
+	margin: auto;
+}
+
+.footer a:before {
+    content: "";
+    border-left: 1px solid #fff;
+    height: 12px;
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+    left: -20px;
+}
+
+.footer .first-link:before {
+	border-left: 0px solid #fff;
+};

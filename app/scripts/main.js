@@ -33,9 +33,10 @@ SEMICOLON.functions = {
         $('#js-google-map').gmap3({
           center:[53.300698, -6.177590],
           zoom:16,
+          scrollwheel: false,
           mapTypeId: "oneill",
           mapTypeControlOptions: {
-            mapTypeIds: [google.maps.MapTypeId.SATELLITE, google.maps.MapTypeId.ROADMAP]
+            // mapTypeIds: [google.maps.MapTypeId.SATELLITE, google.maps.MapTypeId.ROADMAP]
           }
         })
         .marker([
