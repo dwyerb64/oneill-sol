@@ -1,0 +1,34 @@
+.carousel-content { 
+    display: flex;
+    align-items: center; 
+}
+
+#quotes .item {
+	min-height: 300px;
+}
+
+blockquote {
+	border-left: none;
+}
+
+
+
+.item blockquote:before, .item blockquote:after {
+    /*font-family: 'icons';*/
+    position: absolute;
+    font-size: 70px;
+    top: -95px;
+    color: #242526;
+    text-shadow: 0 1px 1px rgba(255,255,255,0.1);
+}
+
+.item blockquote:before {
+    /*content: '\275d';*/
+    content: '"';
+}
+
+.item blockquote:after {
+    /*content: '\275d';*/
+    content: '"';
+}
+

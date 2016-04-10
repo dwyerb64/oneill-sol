@@ -20,7 +20,7 @@
 	.nav {
 	    position: absolute;
 	    right: 50%;
-	    margin-right: -140px;
+	    margin-right: -260px;
 	    margin-top: 0;
 	    -webkit-transition: right .5s ease;
 	    -moz-transition: right .5s ease;
@@ -30,13 +30,12 @@
 	}
 
 	.affix .nav {
-		right: 180px;
+		right: 270px;
 	}
 
 	.affix {
 		width: 100%;
 		top: 0px; 
-
 	}
 
 }
