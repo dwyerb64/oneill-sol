@@ -1,5 +1,11 @@
-
+@import "variables.scss";
 
 .btn, h1, h2, h3, .nav a , .map-footer a, .footer a {
     text-transform: uppercase;
+}
+
+.lead { 
+	color: $primaryColour;
+	font-style: italic;
+	font-size: 24px;	
 }

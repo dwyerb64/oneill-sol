@@ -1,8 +1,11 @@
+@import "variables.scss";
+
 /* ------------------------------------- */
 /* 			Contact Form 			 */
 /* ------------------------------------- */
 #contact, .map-footer {
-	background-color: #203245;
+
+	background-color: $primaryColour;
 	color: white;
 }
 
@@ -80,6 +83,14 @@
     border-color: white;
     border-width: 2px;
     padding: 8px 30px;
+}
+
+.btn-info:hover,
+.btn-info:active,
+.btn-info:active:hover, .btn-info:active:focus, .btn-info:active.focus, .btn-info.active:hover, .btn-info.active:focus, .btn-info.active.focus, .open > .btn-info.dropdown-toggle:hover, .open > .btn-info.dropdown-toggle:focus, .open > .btn-info.dropdown-toggle.focus {
+    color: $primaryColour;
+    background-color: white;
+    border-color: $primaryColour;
 }
 
 /*-------   Buttons End ------ */

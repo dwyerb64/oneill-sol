@@ -1,13 +1,33 @@
+@import "variables.scss";
+
 #whoWeAre {
-	background-color: #527191;
+	background-color: $secondaryColour;
 	color: white;
 	position: relative;
 }
 
 #whoWeAre img {
-	position: absolute;
-	width: 50%;
-	height: 100%;
-	right: 0;
-	margin-top: -50px;
+	
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    overflow: hidden;
+    -webkit-transition: all 2s ease-out;
+    transition: all 2s ease-out;
 }
+
+#whoWeAre .img-container {
+    margin-top: -$containerPadding;
+    padding-top: 40.25%;
+}
+
+#whoWeAre .img-overflow {
+	overflow: hidden;
+}
+
