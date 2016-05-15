@@ -2,20 +2,22 @@
 
 #whoWeAre {
 	background-color: $secondaryColour;
+    /*background: url(../images/oneill-solicitors-meetings.jpg);*/
 	color: white;
 	position: relative;
 }
 
 #whoWeAre img {
 	
-
+ 
     position: absolute;
     right: 0;
     top: 0;
+    width: 50%;
     bottom: 0;
     display: block;
-    max-width: 100%;
-    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
     margin: auto;
     overflow: hidden;
     -webkit-transition: all 2s ease-out;
@@ -23,11 +25,24 @@
 }
 
 #whoWeAre .img-container {
-    margin-top: -$containerPadding;
-    padding-top: 40.25%;
+    background: url(../images/oneill-solicitors-meetings.jpg);
+    background-position-x: 100%;
+    background-position-y: 25%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+
 }
 
 #whoWeAre .img-overflow {
 	overflow: hidden;
+}
+
+.responsive-figure {
+    width: 50%
 }
 
