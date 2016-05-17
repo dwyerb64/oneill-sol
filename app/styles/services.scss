@@ -1,0 +1,38 @@
+/*Spacing for images*/
+.services-image{
+	padding-right: 4px;
+    padding-left: 4px;
+    padding-bottom: 8px;}
+
+
+/*Tile containing text for images*/
+.tile{
+	position: absolute;
+    top: 55%;
+    z-index: 1;
+    width: 75%;
+    height: 28%;
+    border-radius: 0px 5px 5px 0px;
+    background-color: white;
+    opacity: 0.8;
+}
+/*Image text*/
+#services p{
+  	padding-left: 12%;
+    position: relative;
+    font-size: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.minus-padding{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+/*Adjusted image text size for mobile*/
+@media screen and (max-width: 480px){
+    #services p{
+        font-size: 12px;
+    }
+}
