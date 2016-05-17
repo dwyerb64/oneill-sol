@@ -2,8 +2,12 @@
 .services-image{
 	padding-right: 4px;
     padding-left: 4px;
-    padding-bottom: 8px;}
+    padding-bottom: 8px;
+}
 
+.services-image .img-responsive {
+    width: 100%;
+}
 
 /*Tile containing text for images*/
 .tile{
