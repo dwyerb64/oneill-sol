@@ -35,30 +35,37 @@
         </div>
       </div>
     </section>
-    <nav class="navbar navbar-default affix-top js-navbar">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <a id="nav-toggle" class="collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span></span></a>
-            </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <!-- NAVITEMS -->
-              <ul class="nav nav-pills">
-                <li><a class="page-scroll" href="#about">About</a></li>
-                <li><a class="page-scroll" href="#whoWeAre">Who We Are</a></li>
-                <li><a class="page-scroll" href="#services">Services</a></li>
-                <li><a class="page-scroll" href="#quotes">Testimonials</a></li>
-                <li><a class="page-scroll" href="#contact">Contact</a></li>
-                
-                <!-- <li><a href="#google-map"><span class="glyphicon glyphicon-search"></span></a></li> -->
-              </ul>
-              <!-- ENDNAVITEMS -->
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
+
+    <nav id="mainNavbar" class="navbar navbar-default affix-top js-navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse" 
+            data-target="#collapsemenu"
+            aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse"
+          id="collapsemenu">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Mission</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Staff</a></li>
+            <li><a href="#">Testimonials</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
-    <section id="about" class="container">
+
+
+    <section id="about" class="container sectionPadding">
       <div class="row">
         <div class="col-xs-12">
           <h1 class="text-center">Our business is understanding you</h1>
@@ -257,6 +264,7 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/gmap3/dist/gmap3.min.js"></script>
     <!-- endbower -->
     <script src="/bower_components/gmap3/dist/gmap3.js"></script>
     <!-- endbuild -->

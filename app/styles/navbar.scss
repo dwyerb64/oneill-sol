@@ -1,26 +1,36 @@
 @import "variables.scss";
 
-.navbar {
+#mainNavbar .navbar-toggle {
 	background-color: $primaryColour;
-	z-index: 10;
-	border: none;
-	border-radius: 0px;
-	height: 50px;
-}
-
-.nav > li > a {
-	color: white;
-	padding: 15px 15px;
-}
-
-.nav > li > a:hover, .nav > li > a:focus {
-    color: #e5e5e5;
+    position: relative;
+    float: right;
+    margin-right: 15px;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
     background-color: transparent;
 }
+
+.navbar {
+	background-color: $primaryColour;
+	border: none;
+	border-radius: 0px;
+}
+
+/*.nav > li > a {
+	color: white;
+	padding: 15px 15px;
+}*/
+
+/*.nav > li > a:hover, .nav > li > a:focus {
+    color: #e5e5e5;
+    background-color: transparent;
+}*/
 
 @media (min-width: 768px) {
 	.nav {
 	    position: absolute;
+	    z-index: 1000;
 	    right: 50%;
 	    margin-right: -260px;
 	    margin-top: 0;
@@ -38,6 +48,14 @@
 	.affix {
 		width: 100%;
 		top: 0px; 
+		z-index: 100;
 	}
+}
 
+@media (max-width: 768px) {
+	.affix {
+		width: 100%;
+		top: 0px; 
+		z-index: 100;
+	}
 }
