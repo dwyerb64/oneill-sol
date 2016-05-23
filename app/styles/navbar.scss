@@ -4,28 +4,36 @@
 	background-color: $primaryColour;
     position: relative;
     float: right;
-    margin-right: 15px;
+    margin-right: 8px;
     padding: 9px 10px;
     margin-top: 8px;
     margin-bottom: 8px;
     background-color: transparent;
+    border-radius: 1px;
 }
 
 .navbar {
 	background-color: $primaryColour;
 	border: none;
+	margin-bottom: 0px;
 	border-radius: 0px;
 }
 
-/*.nav > li > a {
-	color: white;
-	padding: 15px 15px;
-}*/
+nav .navbar-nav{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
 
-/*.nav > li > a:hover, .nav > li > a:focus {
+
+#collapsemenu .nav > li > a{
+	color: white;
+}
+
+#mainNavbar .nav > li > a:hover,
+#mainNavbar .nav > li > a:focus {
     color: #e5e5e5;
-    background-color: transparent;
-}*/
+    background-color: #527191;
+}
 
 @media (min-width: 768px) {
 	.nav {
