@@ -16,6 +16,7 @@ SEMICOLON.documentOnReady = {
         $('#landing #videoContainer').append(video);
         video.oncanplay = SEMICOLON.functions.playVideo;
       }
+      
     	SEMICOLON.functions.buildGoogleMap();
     },
     
