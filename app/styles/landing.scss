@@ -18,3 +18,11 @@
 	margin: auto;
 	font-size: 75px;
 }
+
+@media (max-width: 767px) { 
+
+#landing h1 {
+	font-size: 35px;
+}
+
+}

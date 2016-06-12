@@ -6,17 +6,31 @@
 	position: relative;
 }
 
-
-#whoWeAre .img-container {
-    background: url(../images/oneill-solicitors-meetings.jpg);
-    background-position-x: 100%;
-    background-position-y: 25%;
+.half-width-image {
     background-size: cover;
     position: absolute;
     top: 0;
-    right: 0;
     width: 50%;
     height: 100%;
     overflow: hidden;
+}
+
+#whoWeAre .img-container {
+    right: 0;
+    background: url(../images/oneill-solicitors-meetings.jpg);
+    background-position-x: 100%;
+    background-position-y: 25%;
+}
+
+#whoWeAre .col-sm-6 {
+    padding-right: 30px;
+}
+
+@media (max-width: 767px) { 
+    #whoWeAre .img-container {
+        position: relative;
+        width: 100%;
+        height: 300px;
+    }
 
 }

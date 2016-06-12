@@ -32,7 +32,7 @@ SEMICOLON.functions = {
   	buildGoogleMap: function(){
         $('#js-google-map').gmap3({
           center:[53.300698, -6.177590],
-          zoom:16,
+          zoom:17,
           scrollwheel: false,
           mapTypeId: "oneill",
           mapTypeControlOptions: {

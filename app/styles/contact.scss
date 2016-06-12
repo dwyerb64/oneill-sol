@@ -71,6 +71,17 @@
     color: white;
 }
 
+#googleMap {
+  position: relative;
+}
+
+#googleMap .img-container {
+    background: url(../images/oneill-solicitors-meetings.jpg);
+    left: 0;
+    background-position-x: 100%;
+    background-position-y: 25%;
+}
+
 
 /*-------   Google Maps End ------ */
 
