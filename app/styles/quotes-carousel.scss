@@ -53,6 +53,36 @@ blockquote {
     text-shadow: none;
 }
 
+.carousel-caption:before {
+    /*content: "\f10d";*/
+    /*font-family: 'Fontawesome';*/
+    content: " ";
+    background-image: url(../images/quotation-marks.jpg);
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    position: absolute;
+    left:0;
+    top: 25px;
+    float: left;
+    margin-right: 10px;
+}
+
+.carousel-caption:after {
+    /*content: "\f10d";*/
+    /*font-family: 'Fontawesome';*/
+    content: " ";
+    background-image: url(../images/quotation-marks.jpg);
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    position: absolute;
+    right:0;
+    top: 25px;
+    float: left;
+    margin-right: 10px;
+}
+
 blockquote footer {
     margin-top: 40px;
 }

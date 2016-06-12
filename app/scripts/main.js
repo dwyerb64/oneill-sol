@@ -10,6 +10,12 @@ var SEMICOLON = SEMICOLON || {};
 SEMICOLON.documentOnReady = {
     init: function(){
     	SEMICOLON.functions.navBar();
+
+      if(!isMobDevice || !Modernizr.touch){ 
+        video = SEMICOLON.functions.setUpVideo();
+        $('#landing #videoContainer').append(video);
+        video.oncanplay = SEMICOLON.functions.playVideo;
+      }
     	SEMICOLON.functions.buildGoogleMap();
     },
     
@@ -21,6 +27,36 @@ SEMICOLON.documentOnReady = {
 };
 
 SEMICOLON.functions = {
+    playVideo: function(){
+        video.play();
+        // $('#spinner-overlay').hide();
+        $('#landing').fadeIn(1000).addClass('js-loaded');
+    },
+    
+    setUpVideo: function(){
+        video = document.createElement('video');
+        video.poster = '/images/js-images/oneill-solicitors-blackrock-park.jpg';
+        video.preload = 'auto';
+        video.id = 'videoObj';
+        video.autoPlay = true;
+        video.loop = true;
+
+        // video.src = 'images/no-more-backgrounds31.mp4';
+        
+        if (video.canPlayType('video/mp4').length > 0) {
+            /* set some video source */
+            video.src = '/images/js-images/oneill-blackrock.mp4';
+        }else if (video.canPlayType('video/webm').length > 0) {
+            /* set some video source */
+            video.src = '/images/js-images/no-more-backgrounds.webm';
+        }else if (video.canPlayType('video/ogg').length > 0) {
+            /* set some video source */
+            video.src = '/images/js-images/no-more-backgrounds.ogv';
+        }
+
+        return video;  
+
+    },
     
     navBar: function(){
     	var navBar = $('.js-navbar');
@@ -102,6 +138,7 @@ SEMICOLON.functions = {
 //               //
 var $htmlBody = $('body,html'),
     $window = $(window),
+    video = null,
     isMobDevice = (/iphone|ipad|Android|webOS|iPod|BlackBerry|Windows Phone|ZuneWP7/gi).test(navigator.appVersion);
 
 
