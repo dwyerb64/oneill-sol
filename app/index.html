@@ -21,7 +21,7 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
 
     <!-- endbuild -->
-    
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300italic,300' rel='stylesheet' type='text/css'>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!--[if lt IE 10]>
@@ -73,7 +73,7 @@
           <p>Visiting a solicitor can be daunting, but it doesn't need to be. Our approach is friendly, compassionate, and above all, professional.</p>
           <p>Since our doors opened over thirty years' ago, we've successfully hepled thousands of people solve their legal issues. We can do the same for you.</p>
           <p>Whatever area you need advice in, we'll provide a listening ear. And, we'll use our longstanding expertise to guide you towards the best possible outcome.</p>
-          <p class="lead">So call us today, and we'll welcome you in for a chat <a href="tel:012882100" class="btn btn-info">(01) 288 2100</a></p>
+          <p class="lead col-sm-offset-1">So call us today, and we'll welcome you in for a chat <a href="tel:012882100" class="btn btn-info">(01) 288 2100</a></p>
         </div>
       </div>
     </section>
@@ -82,9 +82,9 @@
           <div class="row">        
             <div class="col-xs-12 col-sm-6">
               <h2>Who We Are</h2>
-              <h4 class="top-margin-md">Mary O'Neill</h4>
+              <h3 class="top-margin-md">Mary O'Neill</h3>
               <p>With over thirty years' legal experience, Mary bring unique expertise and confidence to each case.</p>
-              <h4 class="top-margin-md">Valerie Byrne</h4>
+              <h3 class="top-margin-md">Valerie Byrne</h3>
               <p class="bottom-margin-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa distinctio porro consequatur libero.</p>
             </div>
             
@@ -97,7 +97,7 @@
       </div>
     </section>
     <section id="services" class="container-fluid minus-padding">
-      <h1 class="text-center">Services</h1>
+      <h2 class="text-center">Services</h2>
       <div class="container-fluid">
           <div class="row">
             <div class="services-image col-md-3 col-xs-6">
@@ -154,7 +154,7 @@
 
     <section id="quotes" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
-      <h1 class="text-center">Testimonials</h1>
+      <h2 class="text-center">Testimonials</h2>
       <ol class="carousel-indicators">
         <li data-target="#quotes" data-slide-to="0" class="active"></li>
         <li data-target="#quotes" data-slide-to="1"></li>
@@ -190,11 +190,12 @@
       </div>
 
     </section>
+
     <section id="contact" class="sectionPadding">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-6">
-              <form role="form" id="email-form">
+              <form role="form" id="jsEmailForm">
                   <div class="form-group">
                     <input type="text" class="form-control" name="inputName" id="inputName" placeholder="NAME" required>
                   </div>
@@ -204,7 +205,11 @@
                   <div class="form-group">
                     <textarea class="form-control" name="inputMessage" id="inputMessage" placeholder="MESSAGE"  rows="4"></textarea>
                   </div>
-                  <input type="submit" name="SEND" id="submit" value="Submit" class="btn btn-info pull-right">
+                  <input type="hidden" name="_subject" value="Oneill Website form message" />
+                  <input type="text" name="_gotcha" style="display:none" />
+                   <span class="label label-success form-message" id="jsFormSuccess">Message sent. We will respond ASAP.</span>
+                  <span class="label label-warning form-message" id="jsFormFail">An Error Occurred. </span>
+                  <input type="submit" id="jsFormSubmit" name="SEND" id="submit" value="Submit" class="btn btn-info pull-right">
                 
               </form>
           </div>
@@ -240,22 +245,23 @@
       </div>
     </section>
     <div class="map-footer">
-      <div class="container top-padding-sm bottom-padding-sm">
+      <div class="container-fluid top-padding-sm bottom-padding-sm">
         <div class="row">
           <div class="col-xs-12 col-md-6">
+            
+          </div>
+          <div class="col-xs-12 col-md-6 text-right">
             <a href="">View Larger Map</a>
           </div>
           
-          <div class="col-xs-12">
-            
-          </div>
+          
         </div>
       </div>
     </div>
     
 
     <div class="footer">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-xs-12">
             <small>Copyright 2015. O'Neill Solicitors, 12A Carysfort Avenue, Blackrock, Co. Dublin</small><br>
@@ -308,5 +314,7 @@
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
+
+    
   </body>
 </html>

@@ -35,6 +35,11 @@ nav .navbar-nav{
     background-color: #527191;
 }
 
+.navbar-default .navbar-nav > .active > a, #mainNavbar .nav > li > a:hover,
+#mainNavbar .nav > li > a:focus {
+	background-color: $highlightColour;
+}
+
 @media (min-width: 768px) {
 	.nav {
 	    position: absolute;

@@ -1,11 +1,97 @@
 @import "variables.scss";
 
-.btn, h1, h2, h3, .nav a , .map-footer a, .footer a {
+.btn, h2, h3, .nav a , .map-footer a, .footer a {
     text-transform: uppercase;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
 }
 
 .lead { 
 	color: $primaryColour;
+	font-size: 26px;	
+}
+
+p {
+	font-size: 18px;
+	color: #707070;
+}
+
+h1 {
+	font-size: 36px;
+	color: #383838;
+}
+
+h2 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 28px;
+	color: #383838;
+}
+
+blockquote p, blockquote cite {
+	font-size: 20px;
+	line-height: 1.4;
+	text-align: center;
+	color: #707070;
+}
+
+small {
+	font-family: HelveticaNeue,  Georgia, serif;
+	font-size: 12px;
+	line-height: 1.2;
+	color: #a4a4a4;
+}
+
+
+#landing h1 {
+	text-align: center;
+	width: 80%;
+	color: white;
+	margin: auto;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	font-size: 58px;
+}
+
+
+#service h2, #quotes h2{
+    font-size: 28px;
+}
+
+#contact, #contact h2 {
+	color: white;
+}
+
+
+#about .lead {
+	font-family: 'Lato', sans-serif;
 	font-style: italic;
-	font-size: 24px;	
+	font-weight: 300;
+	font-size: 26px;
+	color: $highlightColour;
+}
+
+#whoWeAre p, #contact p {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+#whoWeAre h2{
+	color: white;
+}
+
+.map-footer a {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.footer a {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	color: #ffffff;
 }

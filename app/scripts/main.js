@@ -18,6 +18,10 @@ SEMICOLON.documentOnReady = {
       }
       
     	SEMICOLON.functions.buildGoogleMap();
+
+      SEMICOLON.functions.setUpFormEvents();  
+  
+      
     },
     
     windowscroll: function() {
@@ -28,6 +32,50 @@ SEMICOLON.documentOnReady = {
 };
 
 SEMICOLON.functions = {
+
+  
+    sendEmail: function(event){
+          event.preventDefault();
+  
+          var form = $(this);
+          $.ajax({
+              url: "https://formspree.io/dwyerb@tcd.ie", 
+              method: "POST",
+              data: form.serialize(),
+              dataType: "json"
+          }).done(function( data ) {
+            SEMICOLON.functions.sendEmailSuccess();
+          }).fail(function(jqXHR) {
+            SEMICOLON.functions.sendEmailFail(jqXHR);
+          });
+  
+          return false;
+      },
+  
+      sendEmailSuccess: function(){
+          $('#jsFormSuccess').show();
+          $('#jsFormFail').hide();
+          $('#jsFormSubmit').hide();
+          
+      },
+  
+      sendEmailFail: function(jqXHR ){
+          if(jqXHR.responseJSON.error){
+            $('#jsFormFail').append(" " + jqXHR.responseJSON.error);
+          }
+          $('#jsFormFail').show();
+      },
+      
+  
+      setUpFormEvents: function(){
+          $('#jsEmailForm').submit(
+            SEMICOLON.functions.sendEmail
+          );
+  
+      },
+
+  
+  
     playVideo: function(){
         video.play();
         // $('#spinner-overlay').hide();

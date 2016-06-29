@@ -1,0 +1,19 @@
+@import "variables.scss";
+
+.btn {
+    background: none;
+    border-radius: 3px;
+    padding: 12px 35px;
+    margin: 0px 15px; 
+}
+
+
+#about .btn {
+    color: $highlightColour;
+    border: 2px solid $highlightColour;
+}
+
+#contact .btn {
+    color: white;
+    border: 2px solid white;
+}

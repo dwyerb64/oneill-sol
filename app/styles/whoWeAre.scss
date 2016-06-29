@@ -1,7 +1,7 @@
 @import "variables.scss";
 
 #whoWeAre {
-	background-color: $secondaryColour;
+	background-color: $primaryColour;
 	color: white;
 	position: relative;
 }
@@ -25,6 +25,8 @@
 #whoWeAre .col-sm-6 {
     padding-right: 30px;
 }
+
+
 
 @media (max-width: 767px) { 
     #whoWeAre .img-container {
