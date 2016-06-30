@@ -29,14 +29,9 @@ nav .navbar-nav{
 	color: white;
 }
 
-#mainNavbar .nav > li > a:hover,
-#mainNavbar .nav > li > a:focus {
-    color: #e5e5e5;
-    background-color: #527191;
-}
-
-.navbar-default .navbar-nav > .active > a, #mainNavbar .nav > li > a:hover,
-#mainNavbar .nav > li > a:focus {
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus{
 	background-color: $highlightColour;
 }
 
@@ -72,3 +67,26 @@ nav .navbar-nav{
 		z-index: 100;
 	}
 }
+
+a.draw-underline{
+  position: relative;
+  text-decoration: none;
+  }
+
+  a.draw-underline::before{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    bottom: 10px;
+    left: 4px;
+    background-color: #fff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.2s ease-in-out 0s;
+  }
+
+  a.draw-underline:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
