@@ -14,37 +14,18 @@ blockquote {
 }
 
 
-
-/*.item blockquote:before, .item blockquote:after {
-    font-family: 'icons';
-    position: absolute;
-    font-size: 70px;
-    top: -95px;
-    color: #242526;
-    text-shadow: 0 1px 1px rgba(255,255,255,0.1);
-}*/
-/*
-.item blockquote:before {
-    content: '\275d';
-    content: '"';
-}
-
-.item blockquote:after {
-    content: '\275d';
-    content: '"';
-}*/
-
 .carousel-indicators li {
     background-color: #cfd8d7;
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
 }
 
 .carousel-indicators li.active {
-    background-color: $primaryColour;
-    width: 15px;
-    height: 15px;
-    margin: 1px;
+    background-color: $highlightColour;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 1px;
+
 }
 
 .carousel-caption {
@@ -53,34 +34,26 @@ blockquote {
     text-shadow: none;
 }
 
-.carousel-caption:before {
-    /*content: "\f10d";*/
-    /*font-family: 'Fontawesome';*/
+.carousel-caption:before, .carousel-caption:after  {
     content: " ";
-    background-image: url(../images/quotation-marks.jpg);
-    width: 30px;
-    height: 30px;
-    background-size: contain;
+    width: 90px;
+    height: 100px;
+    background-size: cover;
     position: absolute;
-    left:0;
-    top: 25px;
+    top: 10px;
     float: left;
-    margin-right: 10px;
+}
+
+.carousel-caption:before {
+    background-image: url(../images/quote-open.png);
+    left:0;
+    margin-left: -80px;
 }
 
 .carousel-caption:after {
-    /*content: "\f10d";*/
-    /*font-family: 'Fontawesome';*/
-    content: " ";
-    background-image: url(../images/quotation-marks.jpg);
-    width: 30px;
-    height: 30px;
-    background-size: contain;
-    position: absolute;
+    background-image: url(../images/quote-close.png);
     right:0;
-    top: 25px;
-    float: left;
-    margin-right: 10px;
+    margin-right: -80px;
 }
 
 blockquote footer {

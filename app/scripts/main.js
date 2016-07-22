@@ -94,13 +94,13 @@ SEMICOLON.functions = {
         
         if (video.canPlayType('video/mp4').length > 0) {
             /* set some video source */
-            video.src = '/images/js-images/oneill-blackrock.mp4';
+            video.src = '/images/js-images/oneill-blackrock-720.mp4';
         }else if (video.canPlayType('video/webm').length > 0) {
             /* set some video source */
-            video.src = '/images/js-images/no-more-backgrounds.webm';
+            video.src = '/images/js-images/no-more-backgrounds-720.webm';
         }else if (video.canPlayType('video/ogg').length > 0) {
             /* set some video source */
-            video.src = '/images/js-images/no-more-backgrounds.ogv';
+            video.src = '/images/js-images/no-more-backgrounds-720.ogv';
         }
 
         return video;  
@@ -125,7 +125,7 @@ SEMICOLON.functions = {
           }
         })
         .marker([
-          {position:[53.300698, -6.177590], icon: "http://maps.google.com/mapfiles/marker_grey.png"}
+          {position:[53.300698, -6.177590], icon: "/images/js-images/location-pinx50.png"}
         ])
         .styledmaptype(
         "oneill",
