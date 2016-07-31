@@ -22,6 +22,7 @@ p {
 h1 {
 	font-size: 36px;
 	color: #383838;
+	margin-bottom: 30px;
 }
 
 h2 {
@@ -29,6 +30,7 @@ h2 {
 	font-weight: 400;
 	font-size: 28px;
 	color: #383838;
+	margin-bottom: 15px;
 }
 
 blockquote p, blockquote cite {
@@ -68,14 +70,20 @@ small {
 #about .lead {
 	font-family: 'Lato', sans-serif;
 	font-style: italic;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 26px;
 	color: $highlightColour;
 }
 
+
+#about .lead .btn-info {
+	font-style: normal;
+	font-size: 22px;
+}
+
 #whoWeAre p, #contact p {
 	font-family: 'Lato', sans-serif;
-	font-weight: 400;
+	font-weight: 300;
     font-size: 16px;
     color: white;
 }

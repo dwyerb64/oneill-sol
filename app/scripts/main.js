@@ -115,21 +115,11 @@ SEMICOLON.functions = {
   	},
 
   	buildGoogleMap: function(){
-        $('#js-google-map').gmap3({
-          center:[53.300698, -6.177590],
-          zoom:17,
-          scrollwheel: false,
-          mapTypeId: "oneill",
-          mapTypeControlOptions: {
-            // mapTypeIds: [google.maps.MapTypeId.SATELLITE, google.maps.MapTypeId.ROADMAP]
-          }
-        })
-        .marker([
-          {position:[53.300698, -6.177590], icon: "/images/js-images/location-pinx50.png"}
-        ])
-        .styledmaptype(
-        "oneill",
-        [
+
+      var myLatLng = {lat: 53.300698, lng: -6.177590};
+      var iconImage = "/images/js-images/location-pinx50.png";
+
+      var customMapType = new google.maps.StyledMapType([
           {
             featureType: 'landscape.man_made',
             elementType: 'geometry',
@@ -175,8 +165,30 @@ SEMICOLON.functions = {
           }
           ],
         {name: "O'Neill"}
-      );;
-    
+        );
+
+      var customMapTypeId = 'oneill_style';
+
+
+      var map = new google.maps.Map(document.getElementById('js-google-map'), {
+          center: {lat: 53.300698, lng: -6.177590},
+          scrollwheel: false,
+          zoom: 17,
+          mapTypeControlOptions: {
+            mapTypeIds: ['roadmap', customMapTypeId]
+        }
+      });
+
+      map.mapTypes.set(customMapTypeId, customMapType);
+      map.setMapTypeId(customMapTypeId);
+
+      var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'ONeill Solitictors',
+          icon: iconImage
+        });
+
   }
 };
 
