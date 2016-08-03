@@ -24,7 +24,6 @@ figure.effect-marley figcaption {
     position: absolute;
     width: 100%;
     height: 100%;
-
     top: 0px;
     transition: background-color 1s;
 }
@@ -47,13 +46,21 @@ figure.effect-marley p {
 
 figure.effect-marley h3 {
     top: 0px;
-    -webkit-transition: -webkit-transform 0.35s;
-    transition: transform 0.35s;
-    -webkit-transform: translate3d(0,20px,0);
-    transform: translate3d(0,20px,0);
+    right: 0px;
+    left: 0px;
+    margin-top: 0px;
+    line-height: 50px;
+    background: rgba($primaryColour,0.5);
+    padding-right: 30px;
+    border-radius: 2px;
+    -webkit-transition: -webkit-transform 0.35s, background 0.35s;
+    transition: transform 0.35s, background 0.35s;
+    -webkit-transform: translate3d(0,20px,0), background 0.35s;
+    transform: translate3d(0,20px,0), background 0.35s;
 }
 
 figure.effect-marley:hover h3 {
+    background: rgba($primaryColour,0.0);
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
