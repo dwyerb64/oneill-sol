@@ -225,7 +225,8 @@ module.exports = function (grunt) {
           '<%= config.dist %>/styles/{,*/}*.css',
           '<%= config.dist %>/images/{,*/}*.*',
           '<%= config.dist %>/fonts/{,*/}*.*',
-          '<%= config.dist %>/*.{ico,png}'
+          '<%= config.dist %>/*.{ico,png}',
+          '!<%= config.dist %>/images/js-images/{,*/}*.*',
         ]
       }
     },
@@ -350,6 +351,14 @@ module.exports = function (grunt) {
           cwd: '.',
           src: 'bower_components/bootstrap-sass/assets/fonts/bootstrap/*',
           dest: '<%= config.dist %>'
+        },{
+          expand: true,
+          dot: true,
+          cwd: '<%= config.app %>',
+          dest: '<%= config.dist %>',
+          src: [
+            'images/js-images/{,*/}*.mp4'
+          ]
         }]
       }
     },

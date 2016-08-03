@@ -20,7 +20,9 @@ SEMICOLON.documentOnReady = {
     	SEMICOLON.functions.buildGoogleMap();
 
       SEMICOLON.functions.setUpFormEvents();  
-  
+      
+      
+      $('#landing').addClass('js-loaded');
       
     },
     
@@ -79,7 +81,7 @@ SEMICOLON.functions = {
     playVideo: function(){
         video.play();
         // $('#spinner-overlay').hide();
-        $('#landing').fadeIn(1000).addClass('js-loaded');
+        $('#videoObj').fadeIn(1000);
     },
     
     setUpVideo: function(){
@@ -110,9 +112,20 @@ SEMICOLON.functions = {
     navBar: function(){
     	var navBar = $('.js-navbar');
     	var offsetHeight = navBar.offset();
-        navBar.affix({offset: {top: offsetHeight.top} });
+      navBar.affix({offset: {top: offsetHeight.top} });
 
+      this.scrollTo();
   	},
+
+    scrollTo: function(){
+       $('a.page-scroll').bind('click', function(event) {
+          var $anchor = $(this);
+          $htmlBody.stop(true).animate({
+                  scrollTop: $($anchor.attr('href')).offset().top - 10
+                }, 1500);
+                event.preventDefault();
+        });
+    },
 
   	buildGoogleMap: function(){
 

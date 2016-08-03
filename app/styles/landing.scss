@@ -32,3 +32,83 @@
     left: 0;
     width: 100%;
 }
+
+.video-wrap video {
+    min-width: 100%;
+}
+
+#videoObj {
+    display: none;
+}
+
+
+/* ------------------------------------- */
+/*             SVG animation              */
+/* ------------------------------------- */
+
+$animationTime: 4s;
+$pathLength: 400px;
+$fillColour: #FFFFFF;
+
+$fillStartColour: rgba( $fillColour, .0 );
+
+.svg-animate-entry  {
+  stroke: white;
+  stroke-width: 1px;
+  fill: $fillStartColour;
+  stroke-dasharray: $pathLength, $pathLength;
+  stroke-dashoffset: $pathLength;
+}
+
+.js-loaded .svg-animate-entry {
+  -webkit-animation: dash $animationTime linear forwards;
+  -o-animation: dash $animationTime linear forwards;
+  animation: dash $animationTime linear forwards;
+}
+
+@-webkit-keyframes dash {
+    0% {
+        stroke-dashoffset: $pathLength;
+        fill: $fillStartColour;
+    }
+    50% {
+        stroke-dashoffset: $pathLength / 2;
+        fill: $fillStartColour;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: $fillColour;
+    }
+}
+@-o-keyframes dash {
+    0% {
+        stroke-dashoffset: $pathLength;
+        fill: $fillStartColour;
+    }
+    50% {
+        stroke-dashoffset: $pathLength / 2;
+        fill: $fillStartColour;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: $fillColour;
+    }
+}
+@keyframes dash {
+    0% {
+        stroke-dashoffset: $pathLength;
+        fill: $fillStartColour;
+    }
+    50% {
+        stroke-dashoffset: $pathLength / 2;
+        fill: $fillStartColour;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: $fillColour;
+    }
+}
+
+
+
+/*-------   SVG animation End ------ */
