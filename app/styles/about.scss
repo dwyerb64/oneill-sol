@@ -1,3 +1,26 @@
 @import "variables.scss";
 
 
+#about h1 {
+	text-align: center;
+}
+
+@media (max-width: 767px) { 
+	#about h1 {
+		text-align: left;
+	}
+
+	#about .btn {
+		margin-left: auto;
+	    margin-right: auto;
+	    width: 100%;
+	    display: block;
+	    margin-top: 20px;
+	}
+
+	#about .lead {
+		font-size: 18px;
+	}
+
+}
+

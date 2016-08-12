@@ -112,3 +112,19 @@ $fillStartColour: rgba( $fillColour, .0 );
 
 
 /*-------   SVG animation End ------ */
+
+
+/* ------------------------------------- */
+/*             Mobile              */
+/* ------------------------------------- */
+@media (max-width: 767px) { 
+    h1 svg {
+        max-width: 100%;
+    }
+    #landing {
+        padding-top: 130px;
+    }
+
+}
+
+/*-------   Mobile End ------ */

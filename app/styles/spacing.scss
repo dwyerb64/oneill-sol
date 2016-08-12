@@ -9,6 +9,14 @@
 	padding-bottom: $sectionPaddingBottom;
 }
 
+@media (max-width: 767px) { 
+    .sectionPadding {
+        padding-top: $sectionPaddingTop / 2;
+        padding-bottom: $sectionPaddingBottom / 2;
+    }
+
+}
+
 
 
 /* ------------------------------------- */

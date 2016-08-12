@@ -36,3 +36,19 @@
 	border-left: 0px solid #fff;
 }
 
+@media (max-width: 767px) { 
+    .footer li {
+	    display: block;
+	    float: left;
+	    text-align: center;
+	    width: 100%;
+	    margin: 10px 0px;
+	}
+	.footer a:before {
+		border-left: 0px solid #fff;
+	}
+
+	.footer ul {
+		width: 100%;
+	}
+}
