@@ -20,6 +20,10 @@
     color: white;
 }
 
+textarea.form-control {
+    height: 178px;
+}
+
 .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: white;
 }
@@ -52,6 +56,9 @@
 #jsFormSubmit {
   display: block;
 }
+
+
+
 
 /*-------   Contact Form End ------ */
 

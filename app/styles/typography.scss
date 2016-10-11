@@ -6,7 +6,7 @@
 
 body {
 	font-family: 'Lato', sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 .lead { 
@@ -17,12 +17,14 @@ body {
 p {
 	font-size: 18px;
 	color: #707070;
+	line-height: 1.3;
+	margin: 0 0 20px;
 }
 
 h1 {
 	font-size: 36px;
 	color: #383838;
-	margin-bottom: 30px;
+	margin-bottom: 60px;
 }
 
 h2 {
@@ -32,6 +34,7 @@ h2 {
 	color: #383838;
 	margin-bottom: 15px;
 }
+
 
 blockquote p, blockquote cite {
 	font-size: 20px;
@@ -61,17 +64,28 @@ small {
 #services h3, #services p{
 	font-family: 'Lato', sans-serif;
 	color: white;
+	text-transform: none;
 }
 
-#contact, #contact h2 {
+#contact {
+	h2 {
+		margin-bottom: 30px;
+	}
 	color: white;
 }
+
+#contact h3{
+	margin-bottom: 5px;
+    margin-top: 5px;
+    text-transform: none;
+}
+
 
 
 #about .lead {
 	font-family: 'Lato', sans-serif;
 	font-style: italic;
-	font-weight: 400;
+	font-weight: 700;
 	font-size: 26px;
 	color: $highlightColour;
 }
@@ -80,16 +94,30 @@ small {
 #about .lead .btn-info {
 	font-style: normal;
 	font-size: 22px;
+	font-weight: 700;
 }
 
 #whoWeAre p, #contact p {
 	font-family: 'Lato', sans-serif;
-	font-weight: 300;
+	font-weight: 400;
     font-size: 16px;
     color: white;
+    margin: 0 0 30px;
+
 }
 #whoWeAre h2{
 	color: white;
+	margin-bottom: 55px;
+
+}
+
+#whoWeAre h3{
+	color: white;
+	text-transform: none;
+}
+
+#quotes h2{
+    margin-top: 30px;
 }
 
 .map-footer a {
