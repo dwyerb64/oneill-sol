@@ -102,7 +102,7 @@ SEMICOLON.functions = {
             video.src = '/images/js-images/no-more-backgrounds-720.webm';
         }else if (video.canPlayType('video/ogg').length > 0) {
             /* set some video source */
-            video.src = '/images/js-images/no-more-backgrounds-720.ogv';
+            video.src = '/images/js-images/no-more-backgrounds-720.ogg';
         }
 
         return video;  
