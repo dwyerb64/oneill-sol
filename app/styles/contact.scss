@@ -57,10 +57,9 @@ textarea.form-control {
   display: block;
 }
 
-
-
-
 /*-------   Contact Form End ------ */
+
+
 
 /* ------------------------------------- */
 /* 			Contact Details 			 */
@@ -68,10 +67,15 @@ textarea.form-control {
 
 #contact .contact-details {
 	padding-top: 0px;
+  padding-left: 100px;
 }
 
 #contact .contact-details h2 {
 	margin-top: 0px;
+}
+
+#contact h2 {
+  color: white;
 }
 
 #contact h3 {
@@ -79,7 +83,6 @@ textarea.form-control {
 }
 
 /*-------   Contact Details End ------ */
-
 
 
 
@@ -108,8 +111,8 @@ textarea.form-control {
     background-position-y: 70%;
 }
 
-
 /*-------   Google Maps End ------ */
+
 
 
 /* ------------------------------------- */
@@ -141,3 +144,28 @@ textarea.form-control {
 
 
 
+/* ------------------------------------- */
+/*      Mobile Specific        */
+/* ------------------------------------- */
+
+@media (max-width: 767px) {
+
+  #contact h1 {
+  margin: 10px 0px;
+  }
+
+  #contact .btn{
+  margin-bottom: 20px;
+  }
+
+  #contact .container > div{
+    margin-bottom: 0px;
+  }
+
+  #contact .contact-details {
+  padding-left: 15px;
+}
+
+}
+
+/*-------   Mobile Specific ------ */
