@@ -143,38 +143,46 @@ SEMICOLON.functions = {
             { visibility: 'simplified' }
             ]
           },{
-            featureType: 'poi',
+            featureType: 'poi.park',
             elementType: 'all',
-            stylers: [
-            { hue: '#009999' },
-            { saturation: -47 },
-            { lightness: 49 },
-            { visibility: 'off' }
+            stylers: [ 
+            { hue: '#09a813' },
+            { saturation: 25 },
+            { lightness: 5 },
+            { visibility: 'on' }
             ]
-          },
-          {
-              "featureType": "road",
-              "elementType": "geometry.fill",
-              "stylers": [
-                  {
-                      "visibility": "simplified"
-                  },
-                  {
-                      "hue": "#c4b88e"
-                  }
-              ]
-          },
-          {
-              "featureType": "water",
-              "elementType": "all",
-              "stylers": [
-                  {
-                      "color": "#527191"
-                  },
-                  {
-                      "visibility": "on"
-                  }
-              ]
+          },{
+            featureType: "road",
+            elementType: "geometry.fill",
+            stylers: [
+            {"visibility": "on"},
+            {"hue": "#c4b88e"}
+            ]
+          },{
+            featureType:"road.local",
+            elementType:"geometry.fill",
+            stylers:[
+            {"visibility": "on"},
+            {"color":"#ffffff"}
+            ]
+          },{
+            featureType:"landscape",
+            elementType:"all",
+            stylers:[
+            {"visibility": "on"},
+            {"color":"#dedede"}
+            ]
+          },{
+            featureType:"transit.line",
+            elementType:"geometry",
+            stylers:[{"color":"#a8a5a8"}]
+          },{
+            featureType: "water",
+            elementType: "all",
+            stylers: [
+            {"color": "#527191"},
+            {"visibility": "on"}
+            ]
           }
           ],
         {name: "O'Neill"}
@@ -186,7 +194,7 @@ SEMICOLON.functions = {
       var map = new google.maps.Map(document.getElementById('js-google-map'), {
           center: {lat: 53.300698, lng: -6.177590},
           scrollwheel: false,
-          zoom: 17,
+          zoom: 16,
           mapTypeControlOptions: {
             mapTypeIds: ['roadmap', customMapTypeId]
         }
