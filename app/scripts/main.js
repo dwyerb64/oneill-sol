@@ -16,7 +16,9 @@ SEMICOLON.documentOnReady = {
         $('#landing #videoContainer').append(video);
         video.oncanplay = SEMICOLON.functions.playVideo;
       }
-      
+
+      SEMICOLON.functions.mobileMenuCollapseOnClick();
+
     	SEMICOLON.functions.buildGoogleMap();
 
       SEMICOLON.functions.setUpFormEvents();  
@@ -27,8 +29,6 @@ SEMICOLON.documentOnReady = {
     },
     
     windowscroll: function() {
-        
-
     }
 
 };
@@ -116,6 +116,12 @@ SEMICOLON.functions = {
 
       this.scrollTo();
   	},
+
+    mobileMenuCollapseOnClick: function () {
+    $("nav").find("li").on("click", "a", function () {
+        $('.navbar-collapse.in').collapse('hide');
+      });
+    },
 
     scrollTo: function(){
        $('a.page-scroll').bind('click', function(event) {
