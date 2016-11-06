@@ -66,6 +66,9 @@ nav .navbar-nav{
 		top: 0px; 
 		z-index: 100;
 	}
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+  }
 }
 
 a.draw-underline{

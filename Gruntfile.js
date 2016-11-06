@@ -357,7 +357,7 @@ module.exports = function (grunt) {
           cwd: '<%= config.app %>',
           dest: '<%= config.dist %>',
           src: [
-            'images/js-images/{,*/}*.mp4'
+            'images/js-images/{,*/}*.mp4','images/js-images/{,*/}*.ogg','images/js-images/{,*/}*.webm'
           ]
         }]
       }
@@ -395,6 +395,13 @@ module.exports = function (grunt) {
         'imagemin',
         'svgmin'
       ]
+    },
+    sitemap: {
+        dist: {
+            pattern: ['**/*.html'], 
+            siteRoot: 'dist',
+            homepage: 'index.html'
+        }
     }
   });
 
@@ -448,7 +455,8 @@ module.exports = function (grunt) {
     'modernizr',
     'filerev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'sitemap:dist'
   ]);
 
   grunt.registerTask('default', [
